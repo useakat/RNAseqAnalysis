@@ -10,3 +10,6 @@ RUN echo "rstudio ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 RUN R -e "install.packages(c('ggplot2', 'dplyr'), repos='http://cran.rstudio.com/')"
 
 # 任意のその他の設定
+
+# RStudio Server を非デーモンモードで起動
+CMD ["/usr/lib/rstudio-server/bin/rserver", "--server-daemonize=0"]
