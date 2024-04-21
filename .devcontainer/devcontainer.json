@@ -1,0 +1,16 @@
+{
+  "name": "RStudio",
+  "build": {
+    "dockerfile": "./Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+  "forwardPorts": [8787],
+  "postCreateCommand": "echo 'Server started'",
+  "remoteUser": "rstudio"
+}
