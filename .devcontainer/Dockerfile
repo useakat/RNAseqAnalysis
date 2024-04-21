@@ -12,8 +12,11 @@ RUN apt-get update && apt-get install -y \
     wget
 
 # RStudio Server のダウンロードとインストール
-RUN wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.4.1106-amd64.deb \
-    && gdebi --n rstudio-server-1.4.1106-amd64.deb
+#RUN wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.4.1106-amd64.deb \
+#    && gdebi --n rstudio-server-1.4.1106-amd64.deb
+
+RUN wget https://download2.rstudio.org/rstudio-server-1.1.453-amd64.deb \
+    && gdebi --n rstudio-server-1.1.453-amd64.deb
 
 # RStudio Server の設定
 EXPOSE 8787
