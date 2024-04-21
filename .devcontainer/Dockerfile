@@ -1,7 +1,11 @@
 FROM ubuntu:latest
 
-# 必要なツールのインストール
+# 環境変数の設定
+ENV DEBIAN_FRONTEND=noninteractive
+
+# 必要なパッケージのインストール
 RUN apt-get update && apt-get install -y \
+    tzdata \
     sudo \
     gdebi-core \
     r-base \
@@ -15,5 +19,11 @@ RUN wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.4.11
 EXPOSE 8787
 
 # 環境設定
-ENV USER rstudio
-RUN adduser --disabled-password --gecos "" $USER
+ENV USER=rstudio \
+    PASSWORD=rstudio
+
+RUN adduser --disabled-password --gecos "" $USER \
+    && echo "$USER:$PASSWORD" | chpasswd
+
+RUN ln -fs /usr/share/zoneinfo/Asia/Tokyo /etc/localtime \
+    && dpkg-reconfigure --frontend noninteractive tzdata
