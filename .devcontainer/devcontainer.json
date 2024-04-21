@@ -1,8 +1,9 @@
 {
   "name": "RStudio",
   "build": {
-    "dockerfile": "Dockerfile"
+    "dockerfile": "../Dockerfile"
   },
+  "forwardPorts": [8787],
   "customizations": {
     "vscode": {
       "settings": {
@@ -10,7 +11,5 @@
       }
     }
   },
-  "forwardPorts": [8787],
-  "postCreateCommand": "echo 'Server started'",
   "remoteUser": "rstudio"
 }
