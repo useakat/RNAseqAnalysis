@@ -61,3 +61,16 @@ root で作業する。```sudo su -```
   BiocManager::install(version = "3.19") 
   renv::restore()
   ```
+
+## TCC-GUI の起動方法
+　1. EC2 での Rstudio server の起動
+   ```bash
+   sudo systemctl start rstudio-server
+   ```
+  2. Rstudio へのログイン
+    - ブラウザで、<EC2の Public IPv4 address>:<ポート番号> にアクセス
+    - EC2 のユーザー名とパスワードでログイン
+  3. Rstudio から TCC-GUI を起動
+    ```
+    shiny::runApp(appDir = "TCC-GUI")
+    ```
