@@ -1,0 +1,7 @@
+{{ if .Path }}
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+  {{ if .Site.Params.github_repo }}
+    <a href="{{ .Site.Params.github_repo }}/blob/{{ .Site.Params.github_branch }}/content/{{ .Path }}" target="_blank"><i class="fa-solid fa-pen-to-square fa-fw"></i> {{ T "post_edit_this" }}</a>
+  {{ end }}
+</div>
+{{ end }}
