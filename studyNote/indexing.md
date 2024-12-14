@@ -1,4 +1,4 @@
-# インデックス構築の仕組み
+# salmon によるインデックス構築
 
 ## 1. k-mer分割の処理
 
@@ -20,9 +20,8 @@ ACG, CGT, GTG, TGC, GCA
 
 これらの情報は、ハッシュテーブルやブルームフィルタなどの効率的なデータ構造に格納され、高速な検索を可能にします。
 
-## k-mer 長のトレードオフ
-
-https://lh7-rt.googleusercontent.com/slidesz/AGV_vUd7qeoW2ALQ-XQfLgtXf1HvfYtW39Ru8lq2fEK2QYl6fW1hQk4BjP3H2IXoLSl2UNJ9qfZSLOpnr-fqef4KRhIGWc9luC2tvd-lEQl_3ipYCgsKVyuk_pJPer33Ju30EgD1cDDVsA=s2048?key=l7MYQrRs2jcfgC6C66ku8rLU
+### k-mer 長のトレードオフ
+![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUd7qeoW2ALQ-XQfLgtXf1HvfYtW39Ru8lq2fEK2QYl6fW1hQk4BjP3H2IXoLSl2UNJ9qfZSLOpnr-fqef4KRhIGWc9luC2tvd-lEQl_3ipYCgsKVyuk_pJPer33Ju30EgD1cDDVsA=s2048?key=l7MYQrRs2jcfgC6C66ku8rLU)
 
 ## 3. k-merインデックスとFMインデックスの統合アプローチ
 

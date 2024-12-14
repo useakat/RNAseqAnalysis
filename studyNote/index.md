@@ -1,3 +1,4 @@
 # RNA-seq 勉強ノート
 ## 目次
-- [salmon による定量化](/studyNote/indexing.md)
+- [定量化について](/studyNote/quantifying.md)
+  - [salmon によるインデックス構築](/studyNote/indexing.md)

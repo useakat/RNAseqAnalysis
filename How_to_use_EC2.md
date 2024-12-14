@@ -7,4 +7,4 @@
     sudo growpart /dev/nvme0n1 1
     ```
 ## EC2インスタンスへのEBSボリュームのアタッチ方法
-  [この記事を参照](https://qiita.com/yushikmr/items/4413177dc042d7706bf9)
+  [この記事を参照](https://qlsiita.com/yushikmr/items/4413177dc042d7706bf9)
