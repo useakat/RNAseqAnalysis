@@ -22,19 +22,19 @@ enableGitInfo = false
   [[menu.main]]
     name = "Home"
     weight = 1
-    url = "./"
+    url = "/RNAseqAnalysis/"
   [[menu.main]]
     name = "Documents"
     weight = 2
-    url = "./docs/"
+    url = "/RNAseqAnalysis/docs/"
   [[menu.main]]
     name = "Quantification"
     weight = 3
-    url = "./docs/quantifying/"
+    url = "/RNAseqAnalysis/docs/quantifying/"
   [[menu.main]]
     name = "Indexing"
     weight = 4
-    url = "./docs/indexing/"
+    url = "/RNAseqAnalysis/docs/indexing/"
 
 [params]
 copyright = "Yoshitaro Takaesu"
