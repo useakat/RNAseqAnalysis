@@ -1,4 +1,4 @@
-baseURL = "https://useakat.github.io/RNAseqAnalysis/"
+baseURL = "/"
 title = "Study Notes"
 theme = ["docsy"]
 
@@ -13,6 +13,24 @@ enableGitInfo = false
     title = "Study Notes"
     languageName = "日本語"
     weight = 1
+
+[menu]
+  [[menu.main]]
+    name = "ホーム"
+    weight = 1
+    url = "./"
+  [[menu.main]]
+    name = "ドキュメント"
+    weight = 2
+    url = "./ja/docs/"
+  [[menu.main]]
+    name = "定量化"
+    weight = 3
+    url = "./ja/docs/quantifying/"
+  [[menu.main]]
+    name = "インデックス構築"
+    weight = 4
+    url = "./ja/docs/indexing/"
 
 [params]
 copyright = "Yoshitaro Takaesu"

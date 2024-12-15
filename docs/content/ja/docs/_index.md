@@ -1,7 +1,7 @@
 ---
 title: "RNA-seq 解析 ドキュメント"
 type: docs
-weight: 10
+weight: 1
 ---
 
 # RNA-seq 解析 ドキュメント
