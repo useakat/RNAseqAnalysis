@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://useakat.github.io/RNAseqAnalysis"
 title = "RNAseq Analysis"
 theme = ["docsy"]
 
@@ -22,19 +22,19 @@ enableGitInfo = false
   [[menu.main]]
     name = "Home"
     weight = 1
-    url = "/RNAseqAnalysis/"
+    url = "/"
   [[menu.main]]
     name = "Documents"
     weight = 2
-    url = "/RNAseqAnalysis/docs/"
+    url = "/docs/"
   [[menu.main]]
     name = "Quantification"
     weight = 3
-    url = "/RNAseqAnalysis/docs/quantifying/"
+    url = "/docs/quantifying/"
   [[menu.main]]
     name = "Indexing"
     weight = 4
-    url = "/RNAseqAnalysis/docs/indexing/"
+    url = "/docs/indexing/"
 
 [params]
 copyright = "Yoshitaro Takaesu"
