@@ -2,6 +2,13 @@
 title: "RNA-seq 解析 ドキュメント"
 type: docs
 weight: 10
+cascade:
+  type: docs
+description: "RNA-seq解析に関する包括的なドキュメンテーション"
+menu:
+  main:
+    weight: 20
+    pre: <i class='fas fa-book'></i>
 ---
 
 # RNA-seq 解析 ドキュメント

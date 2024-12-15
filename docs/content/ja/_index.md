@@ -1,6 +1,5 @@
 ---
 title: "RNA-seq 解析 学習サイト"
-type: docs
 weight: 1
 ---
 
