@@ -22,19 +22,19 @@ enableGitInfo = false
   [[menu.main]]
     name = "Home"
     weight = 1
-    url = "/"
+    url = "./"
   [[menu.main]]
     name = "Documents"
     weight = 2
-    url = "/docs/"
+    url = "./docs/"
   [[menu.main]]
     name = "Quantification"
     weight = 3
-    url = "/docs/quantifying/"
+    url = "./docs/quantifying/"
   [[menu.main]]
     name = "Indexing"
     weight = 4
-    url = "/docs/indexing/"
+    url = "./docs/indexing/"
 
 [params]
 copyright = "Yoshitaro Takaesu"
