@@ -1,38 +1,38 @@
-baseURL = "/ja/"
-title = "Study Notes"
+baseURL = "/"
+title = "RNAseq Analysis"
 theme = ["docsy"]
 
 # Language settings
 defaultContentLanguage = "ja"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 # Disable git info
 enableGitInfo = false
 
 [languages]
   [languages.ja]
-    title = "Study Notes"
-    languageName = "日本語"
+    title = "RNAseq Analysis"
+    languageName = "Japanese"
     weight = 1
-    contentDir = "content/ja"
+    contentDir = "content"
     [languages.ja.params]
       time_format_default = "2006-01-02"
 
 [menu]
   [[menu.main]]
-    name = "ホーム"
+    name = "Home"
     weight = 1
     url = "/"
   [[menu.main]]
-    name = "ドキュメント"
+    name = "Documents"
     weight = 2
     url = "/docs/"
   [[menu.main]]
-    name = "定量化"
+    name = "Quantification"
     weight = 3
     url = "/docs/quantifying/"
   [[menu.main]]
-    name = "インデックス構築"
+    name = "Indexing"
     weight = 4
     url = "/docs/indexing/"
 
@@ -85,10 +85,3 @@ section = [ "HTML", "RSS" ]
 # Ensure all static files are copied to the language directory
 [build]
   writeStats = true
-
-# Copy static files to language subdirectory
-[[deployment]]
-  target = "public/ja"
-  [[deployment.matchers]]
-    pattern = "^.+\\.(js|css|svg|ttf|eot|woff2?)$"
-    gzip = true
