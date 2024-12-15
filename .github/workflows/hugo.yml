@@ -65,7 +65,7 @@ jobs:
           hugo mod tidy
 
       - name: Build
-        run: hugo --minify --debug
+        run: hugo --minify --cleanDestinationDir --debug
 
       #- name: Deploy
       #  uses: peaceiris/actions-gh-pages@v3
